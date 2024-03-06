@@ -49,6 +49,13 @@ export class Complex implements Arithmeticable<Complex> {
   ) {}
 
   /**
+   * @brief Función que calcula el conjugado de un complejo.
+   * @returns Un Complejo con el conjugado
+   */
+  conjugado(): Complex {
+    return new Complex(this.real, -this.imaginario);
+  }
+  /**
    * @brief Suma de números complejos.
    * @param complejo Complejo a sumar con el actual.
    * @returns Resultado numérico de la suma.
