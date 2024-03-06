@@ -34,6 +34,8 @@ describe('Pruebas sobre Adaptador', () => {
     const rational1 = new Rational(1,2);
     const complex2 = new Complex(-2,3);
     const adapt = new Adapter(rational1);
+    const rational2 = new Rational(5,2);
+    const adapt2 = new Adapter(rational2);
     it('Comprobando conversión', () =>{
         expect(adapt.getReal()).to.equal(0.5);
         expect(adapt.getImagin()).to.equal(0);
@@ -45,9 +47,26 @@ describe('Pruebas sobre Adaptador', () => {
     it('Comprobando compatibilidad en multiplicación', () => {
         expect(complex2.multiply(adapt).getReal()).to.equal(-1);
     });
-    it('Comprobando compatibilidad en la división', () =>{
+    it('Comprobando compatibilidad en la división', () => {
         expect(complex2.divide(adapt).getReal()).to.equal(adapt.getReal() * complex2.getReal());
     });
+    it('Comprobando la compatibilidad en la resta', () => { 
+        expect(complex2.substract(adapt).getReal()).to.equal(-2.5);
+        expect(complex2.substract(adapt).getImagin()).to.equal(complex2.getImagin())
+    });
+    it ('Comprobando la compatibilidad entre objetos Adapter sumando', () => {
+        expect(adapt.add(adapt2).getReal()).to.equal(3);
+        expect(adapt.add(adapt2).getImagin()).to.equal(0);
+    });
+    it ('Comprobando la compatibilidad entre objetos Adapter multiplicando', () => {
+        expect(adapt.multiply(adapt2).getReal()).to.equal(1.25);
+        expect(adapt.multiply(adapt2).getImagin()).to.equal(0);
+    });
+    it ('Comprobando la compatibilidad entre objetos Adapter dividiendo', () => {
+        expect(adapt.divide(adapt2).getReal()).to.equal(1.25);
+        expect(adapt.divide(adapt2).getImagin()).to.equal(0);
+    });
+
 });
 
 describe('Comprobando que se puede incluir un racional adaptado a colección de aritméticos.', () => {
