@@ -1,32 +1,1036 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>Complex | instanbul-coveralls</title><meta name="description" content="Documentation for instanbul-coveralls"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><div class="table-cell" id="tsd-search" data-base=".."><div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="../assets/icons.svg#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div><div class="field"><div id="tsd-toolbar-links"></div></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="../index.html" class="title">instanbul-coveralls</a></div><div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="../assets/icons.svg#icon-menu"></use></svg></a></div></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><ul class="tsd-breadcrumb"><li><a href="../modules.html">instanbul-coveralls</a></li><li><a href="Complex.html">Complex</a></li></ul><h1>Class Complex</h1></div><section class="tsd-panel tsd-comment"><div class="tsd-comment tsd-typography"><h4>Brief</h4><p>Clase que implementa números complejos y sus respectivas operaciones.</p>
-</div></section><section class="tsd-panel tsd-hierarchy"><h4>Hierarchy (<a class="link" href="../hierarchy.html#Complex">view full</a>)</h4><ul class="tsd-hierarchy"><li><span class="target">Complex</span><ul class="tsd-hierarchy"><li><a href="Adapter.html" class="tsd-signature-type tsd-kind-class">Adapter</a></li></ul></li></ul></section><section class="tsd-panel"><h4>Implements</h4><ul class="tsd-hierarchy"><li><span class="tsd-signature-type">Arithmeticable</span><span class="tsd-signature-symbol">&lt;</span><a href="Complex.html" class="tsd-signature-type tsd-kind-class">Complex</a><span class="tsd-signature-symbol">&gt;</span></li></ul></section><aside class="tsd-sources"><ul><li>Defined in modificacion.ts:42</li></ul></aside><section class="tsd-panel-group tsd-index-group"><section class="tsd-panel tsd-index-panel"><details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><h5 class="tsd-index-heading uppercase" role="button" aria-expanded="false" tabIndex="0"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="../assets/icons.svg#icon-chevronSmall"></use></svg> Index</h5></summary><div class="tsd-accordion-details"><section class="tsd-index-section"><h3 class="tsd-index-heading">Constructors</h3><div class="tsd-index-list"><a href="Complex.html#constructor" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-512"></use></svg><span>constructor</span></a>
-</div></section><section class="tsd-index-section"><h3 class="tsd-index-heading">Properties</h3><div class="tsd-index-list"><a href="Complex.html#imaginario" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>imaginario</span></a>
-<a href="Complex.html#real" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>real</span></a>
-</div></section><section class="tsd-index-section"><h3 class="tsd-index-heading">Methods</h3><div class="tsd-index-list"><a href="Complex.html#add" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>add</span></a>
-<a href="Complex.html#divide" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>divide</span></a>
-<a href="Complex.html#getImagin" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Imagin</span></a>
-<a href="Complex.html#getReal" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Real</span></a>
-<a href="Complex.html#multiply" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>multiply</span></a>
-<a href="Complex.html#substract" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>substract</span></a>
-</div></section></div></details></section></section><section class="tsd-panel-group tsd-member-group"><h2>Constructors</h2><section class="tsd-panel tsd-member"><a id="constructor" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class="tsd-signature tsd-anchor-link"><a id="constructor.new_Complex" class="tsd-anchor"></a><span class="tsd-kind-constructor-signature">new <wbr/>Complex</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">real</span>, <span class="tsd-kind-parameter">imaginario</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Complex.html" class="tsd-signature-type tsd-kind-class">Complex</a><a href="#constructor.new_Complex" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></li><li class="tsd-description"><div class="tsd-parameters"><h4 class="tsd-parameters-title">Parameters</h4><ul class="tsd-parameter-list"><li><span><span class="tsd-kind-parameter">real</span>: <span class="tsd-signature-type">number</span></span><div class="tsd-comment tsd-typography"><p>Parte real del complejo.</p>
-</div><div class="tsd-comment tsd-typography"></div></li><li><span><span class="tsd-kind-parameter">imaginario</span>: <span class="tsd-signature-type">number</span></span><div class="tsd-comment tsd-typography"><p>Parte imaginaria del complejo.</p>
-</div><div class="tsd-comment tsd-typography"></div></li></ul></div><h4 class="tsd-returns-title">Returns <a href="Complex.html" class="tsd-signature-type tsd-kind-class">Complex</a></h4><div class="tsd-comment tsd-typography"><h4>Breif</h4><p>Constructor de la clase Complex.</p>
-</div><aside class="tsd-sources"><ul><li>Defined in modificacion.ts:48</li></ul></aside></li></ul></section></section><section class="tsd-panel-group tsd-member-group"><h2>Properties</h2><section class="tsd-panel tsd-member"><a id="imaginario" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>imaginario</span><a href="#imaginario" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">imaginario</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><div class="tsd-comment tsd-typography"><p>Parte imaginaria del complejo.</p>
-</div><div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in modificacion.ts:48</li></ul></aside></section><section class="tsd-panel tsd-member"><a id="real" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>real</span><a href="#real" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">real</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><div class="tsd-comment tsd-typography"><p>Parte real del complejo.</p>
-</div><div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in modificacion.ts:48</li></ul></aside></section></section><section class="tsd-panel-group tsd-member-group"><h2>Methods</h2><section class="tsd-panel tsd-member"><a id="add" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>add</span><a href="#add" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class="tsd-signature tsd-anchor-link"><a id="add.add-1" class="tsd-anchor"></a><span class="tsd-kind-call-signature">add</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">complejo</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Complex.html" class="tsd-signature-type tsd-kind-class">Complex</a><a href="#add.add-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></li><li class="tsd-description"><div class="tsd-parameters"><h4 class="tsd-parameters-title">Parameters</h4><ul class="tsd-parameter-list"><li><span><span class="tsd-kind-parameter">complejo</span>: <a href="Complex.html" class="tsd-signature-type tsd-kind-class">Complex</a></span><div class="tsd-comment tsd-typography"><p>Complejo a sumar con el actual.</p>
-</div><div class="tsd-comment tsd-typography"></div></li></ul></div><h4 class="tsd-returns-title">Returns <a href="Complex.html" class="tsd-signature-type tsd-kind-class">Complex</a></h4><p>Resultado numérico de la suma.</p>
-<div class="tsd-comment tsd-typography"><h4>Brief</h4><p>Suma de números complejos.</p>
-</div><aside class="tsd-sources"><p>Implementation of Arithmeticable.add</p><ul><li>Defined in modificacion.ts:56</li></ul></aside></li></ul></section><section class="tsd-panel tsd-member"><a id="divide" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>divide</span><a href="#divide" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class="tsd-signature tsd-anchor-link"><a id="divide.divide-1" class="tsd-anchor"></a><span class="tsd-kind-call-signature">divide</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">complejo</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Complex.html" class="tsd-signature-type tsd-kind-class">Complex</a><a href="#divide.divide-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></li><li class="tsd-description"><div class="tsd-parameters"><h4 class="tsd-parameters-title">Parameters</h4><ul class="tsd-parameter-list"><li><span><span class="tsd-kind-parameter">complejo</span>: <a href="Complex.html" class="tsd-signature-type tsd-kind-class">Complex</a></span><div class="tsd-comment tsd-typography"><p>Complejo en el dividendo.</p>
-</div><div class="tsd-comment tsd-typography"></div></li></ul></div><h4 class="tsd-returns-title">Returns <a href="Complex.html" class="tsd-signature-type tsd-kind-class">Complex</a></h4><p>Resultado numérico de la División.</p>
-<div class="tsd-comment tsd-typography"><h4>Brief</h4><p>División de números complejos.</p>
-</div><aside class="tsd-sources"><p>Implementation of Arithmeticable.divide</p><ul><li>Defined in modificacion.ts:83</li></ul></aside></li></ul></section><section class="tsd-panel tsd-member"><a id="getImagin" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>get<wbr/>Imagin</span><a href="#getImagin" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class="tsd-signature tsd-anchor-link"><a id="getImagin.getImagin-1" class="tsd-anchor"></a><span class="tsd-kind-call-signature">get<wbr/>Imagin</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#getImagin.getImagin-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></li><li class="tsd-description"><h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>Parte imaginaria del número complejo.</p>
-<div class="tsd-comment tsd-typography"><h4>Brief</h4><p>Obtiene la parte imaginaria del número complejo.</p>
-</div><aside class="tsd-sources"><ul><li>Defined in modificacion.ts:91</li></ul></aside></li></ul></section><section class="tsd-panel tsd-member"><a id="getReal" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>get<wbr/>Real</span><a href="#getReal" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class="tsd-signature tsd-anchor-link"><a id="getReal.getReal-1" class="tsd-anchor"></a><span class="tsd-kind-call-signature">get<wbr/>Real</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#getReal.getReal-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></li><li class="tsd-description"><h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>Parte real del número complejo.</p>
-<div class="tsd-comment tsd-typography"><h4>Brief</h4><p>Obtiene la parte real del número complejo.</p>
-</div><aside class="tsd-sources"><ul><li>Defined in modificacion.ts:98</li></ul></aside></li></ul></section><section class="tsd-panel tsd-member"><a id="multiply" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>multiply</span><a href="#multiply" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class="tsd-signature tsd-anchor-link"><a id="multiply.multiply-1" class="tsd-anchor"></a><span class="tsd-kind-call-signature">multiply</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">complejo</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Complex.html" class="tsd-signature-type tsd-kind-class">Complex</a><a href="#multiply.multiply-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></li><li class="tsd-description"><div class="tsd-parameters"><h4 class="tsd-parameters-title">Parameters</h4><ul class="tsd-parameter-list"><li><span><span class="tsd-kind-parameter">complejo</span>: <a href="Complex.html" class="tsd-signature-type tsd-kind-class">Complex</a></span><div class="tsd-comment tsd-typography"><p>Complejo en el multiplicando de la operación.</p>
-</div><div class="tsd-comment tsd-typography"></div></li></ul></div><h4 class="tsd-returns-title">Returns <a href="Complex.html" class="tsd-signature-type tsd-kind-class">Complex</a></h4><p>Resultado numérico de la multiplicación.</p>
-<div class="tsd-comment tsd-typography"><h4>Brief</h4><p>Multiplicación de números complejos.</p>
-</div><aside class="tsd-sources"><p>Implementation of Arithmeticable.multiply</p><ul><li>Defined in modificacion.ts:74</li></ul></aside></li></ul></section><section class="tsd-panel tsd-member"><a id="substract" class="tsd-anchor"></a><h3 class="tsd-anchor-link"><span>substract</span><a href="#substract" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class="tsd-signature tsd-anchor-link"><a id="substract.substract-1" class="tsd-anchor"></a><span class="tsd-kind-call-signature">substract</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">complejo</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Complex.html" class="tsd-signature-type tsd-kind-class">Complex</a><a href="#substract.substract-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></li><li class="tsd-description"><div class="tsd-parameters"><h4 class="tsd-parameters-title">Parameters</h4><ul class="tsd-parameter-list"><li><span><span class="tsd-kind-parameter">complejo</span>: <a href="Complex.html" class="tsd-signature-type tsd-kind-class">Complex</a></span><div class="tsd-comment tsd-typography"><p>Complejo a restar con el actual.</p>
-</div><div class="tsd-comment tsd-typography"></div></li></ul></div><h4 class="tsd-returns-title">Returns <a href="Complex.html" class="tsd-signature-type tsd-kind-class">Complex</a></h4><p>Resultado numérico de la resta.</p>
-<div class="tsd-comment tsd-typography"><h4>Brief</h4><p>Resta de números complejos.</p>
-</div><aside class="tsd-sources"><p>Implementation of Arithmeticable.substract</p><ul><li>Defined in modificacion.ts:65</li></ul></aside></li></ul></section></section></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-index-accordion"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><h4 class="uppercase">Member Visibility</h4><form><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-private" name="private"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Private</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></form></div><div class="tsd-theme-toggle"><h4 class="uppercase">Theme</h4><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><details open class="tsd-index-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>On This Page</h3></summary><div class="tsd-accordion-details"><ul><li><a href="#constructor" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-512"></use></svg><span>constructor</span></a></li><li><a href="#imaginario" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>imaginario</span></a></li><li><a href="#real" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1024"></use></svg><span>real</span></a></li><li><a href="#add" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>add</span></a></li><li><a href="#divide" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>divide</span></a></li><li><a href="#getImagin" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Imagin</span></a></li><li><a href="#getReal" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Real</span></a></li><li><a href="#multiply" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>multiply</span></a></li><li><a href="#substract" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-2048"></use></svg><span>substract</span></a></li></ul></div></details></div><div class="site-menu"><nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-1"></use></svg><span>instanbul-coveralls</span></a><ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base=".."><li>Loading...</li></ul></nav></div></div></div><div class="tsd-generator"><p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div><div class="overlay"></div></body></html>
+<!doctype html>
+<html class="default" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>Complex | instanbul-coveralls</title>
+    <meta name="description" content="Documentation for instanbul-coveralls" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/highlight.css" />
+    <script defer src="../assets/main.js"></script>
+    <script async src="../assets/icons.js" id="tsd-icons-script"></script>
+    <script async src="../assets/search.js" id="tsd-search-script"></script>
+    <script async src="../assets/navigation.js" id="tsd-nav-script"></script>
+  </head>
+  <body>
+    <script>
+      document.documentElement.dataset.theme =
+        localStorage.getItem("tsd-theme") || "os";
+      document.body.style.display = "none";
+      setTimeout(() => document.body.style.removeProperty("display"), 500);
+    </script>
+    <header class="tsd-page-toolbar">
+      <div class="tsd-toolbar-contents container">
+        <div class="table-cell" id="tsd-search" data-base="..">
+          <div class="field">
+            <label
+              for="tsd-search-field"
+              class="tsd-widget tsd-toolbar-icon search no-caption"
+              ><svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <use href="../assets/icons.svg#icon-search"></use></svg></label
+            ><input type="text" id="tsd-search-field" aria-label="Search" />
+          </div>
+          <div class="field"><div id="tsd-toolbar-links"></div></div>
+          <ul class="results">
+            <li class="state loading">Preparing search index...</li>
+            <li class="state failure">The search index is not available</li>
+          </ul>
+          <a href="../index.html" class="title">instanbul-coveralls</a>
+        </div>
+        <div class="table-cell" id="tsd-widgets">
+          <a
+            href="#"
+            class="tsd-widget tsd-toolbar-icon menu no-caption"
+            data-toggle="menu"
+            aria-label="Menu"
+            ><svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <use href="../assets/icons.svg#icon-menu"></use></svg
+          ></a>
+        </div>
+      </div>
+    </header>
+    <div class="container container-main">
+      <div class="col-content">
+        <div class="tsd-page-title">
+          <ul class="tsd-breadcrumb">
+            <li><a href="../modules.html">instanbul-coveralls</a></li>
+            <li><a href="Complex.html">Complex</a></li>
+          </ul>
+          <h1>Class Complex</h1>
+        </div>
+        <section class="tsd-panel tsd-comment">
+          <div class="tsd-comment tsd-typography">
+            <h4>Brief</h4>
+            <p>
+              Clase que implementa números complejos y sus respectivas
+              operaciones.
+            </p>
+          </div>
+        </section>
+        <section class="tsd-panel tsd-hierarchy">
+          <h4>
+            Hierarchy (<a class="link" href="../hierarchy.html#Complex"
+              >view full</a
+            >)
+          </h4>
+          <ul class="tsd-hierarchy">
+            <li>
+              <span class="target">Complex</span>
+              <ul class="tsd-hierarchy">
+                <li>
+                  <a
+                    href="Adapter.html"
+                    class="tsd-signature-type tsd-kind-class"
+                    >Adapter</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="tsd-panel">
+          <h4>Implements</h4>
+          <ul class="tsd-hierarchy">
+            <li>
+              <span class="tsd-signature-type">Arithmeticable</span
+              ><span class="tsd-signature-symbol">&lt;</span
+              ><a href="Complex.html" class="tsd-signature-type tsd-kind-class"
+                >Complex</a
+              ><span class="tsd-signature-symbol">&gt;</span>
+            </li>
+          </ul>
+        </section>
+        <aside class="tsd-sources">
+          <ul>
+            <li>
+              Defined in
+              <a
+                href="https://github.com/ManuelDavidGomezAlonso/PModDSI/blob/1b39d67/src/modificacion.ts#L42"
+                >modificacion.ts:42</a
+              >
+            </li>
+          </ul>
+        </aside>
+        <section class="tsd-panel-group tsd-index-group">
+          <section class="tsd-panel tsd-index-panel">
+            <details class="tsd-index-content tsd-index-accordion" open>
+              <summary class="tsd-accordion-summary tsd-index-summary">
+                <h5
+                  class="tsd-index-heading uppercase"
+                  role="button"
+                  aria-expanded="false"
+                  tabindex="0"
+                >
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <use href="../assets/icons.svg#icon-chevronSmall"></use>
+                  </svg>
+                  Index
+                </h5>
+              </summary>
+              <div class="tsd-accordion-details">
+                <section class="tsd-index-section">
+                  <h3 class="tsd-index-heading">Constructors</h3>
+                  <div class="tsd-index-list">
+                    <a href="Complex.html#constructor" class="tsd-index-link"
+                      ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                        <use href="../assets/icons.svg#icon-512"></use></svg
+                      ><span>constructor</span></a
+                    >
+                  </div>
+                </section>
+                <section class="tsd-index-section">
+                  <h3 class="tsd-index-heading">Properties</h3>
+                  <div class="tsd-index-list">
+                    <a
+                      href="Complex.html#imaginario"
+                      class="tsd-index-link tsd-is-private"
+                      ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                        <use href="../assets/icons.svg#icon-1024"></use></svg
+                      ><span>imaginario</span></a
+                    >
+                    <a
+                      href="Complex.html#real"
+                      class="tsd-index-link tsd-is-private"
+                      ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                        <use href="../assets/icons.svg#icon-1024"></use></svg
+                      ><span>real</span></a
+                    >
+                  </div>
+                </section>
+                <section class="tsd-index-section">
+                  <h3 class="tsd-index-heading">Methods</h3>
+                  <div class="tsd-index-list">
+                    <a href="Complex.html#add" class="tsd-index-link"
+                      ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                        <use href="../assets/icons.svg#icon-2048"></use></svg
+                      ><span>add</span></a
+                    >
+                    <a href="Complex.html#divide" class="tsd-index-link"
+                      ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                        <use href="../assets/icons.svg#icon-2048"></use></svg
+                      ><span>divide</span></a
+                    >
+                    <a href="Complex.html#getImagin" class="tsd-index-link"
+                      ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                        <use href="../assets/icons.svg#icon-2048"></use></svg
+                      ><span>get<wbr />Imagin</span></a
+                    >
+                    <a href="Complex.html#getReal" class="tsd-index-link"
+                      ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                        <use href="../assets/icons.svg#icon-2048"></use></svg
+                      ><span>get<wbr />Real</span></a
+                    >
+                    <a href="Complex.html#multiply" class="tsd-index-link"
+                      ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                        <use href="../assets/icons.svg#icon-2048"></use></svg
+                      ><span>multiply</span></a
+                    >
+                    <a href="Complex.html#substract" class="tsd-index-link"
+                      ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                        <use href="../assets/icons.svg#icon-2048"></use></svg
+                      ><span>substract</span></a
+                    >
+                  </div>
+                </section>
+              </div>
+            </details>
+          </section>
+        </section>
+        <section class="tsd-panel-group tsd-member-group">
+          <h2>Constructors</h2>
+          <section class="tsd-panel tsd-member">
+            <a id="constructor" class="tsd-anchor"></a>
+            <h3 class="tsd-anchor-link">
+              <span>constructor</span
+              ><a
+                href="#constructor"
+                aria-label="Permalink"
+                class="tsd-anchor-icon"
+                ><svg viewBox="0 0 24 24">
+                  <use href="../assets/icons.svg#icon-anchor"></use></svg
+              ></a>
+            </h3>
+            <ul class="tsd-signatures">
+              <li class="tsd-signature tsd-anchor-link">
+                <a id="constructor.new_Complex" class="tsd-anchor"></a
+                ><span class="tsd-kind-constructor-signature"
+                  >new <wbr />Complex</span
+                ><span class="tsd-signature-symbol">(</span
+                ><span class="tsd-kind-parameter">real</span>,
+                <span class="tsd-kind-parameter">imaginario</span
+                ><span class="tsd-signature-symbol">)</span
+                ><span class="tsd-signature-symbol">: </span
+                ><a
+                  href="Complex.html"
+                  class="tsd-signature-type tsd-kind-class"
+                  >Complex</a
+                ><a
+                  href="#constructor.new_Complex"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg viewBox="0 0 24 24">
+                    <use href="../assets/icons.svg#icon-anchor"></use></svg
+                ></a>
+              </li>
+              <li class="tsd-description">
+                <div class="tsd-parameters">
+                  <h4 class="tsd-parameters-title">Parameters</h4>
+                  <ul class="tsd-parameter-list">
+                    <li>
+                      <span
+                        ><span class="tsd-kind-parameter">real</span>:
+                        <span class="tsd-signature-type">number</span></span
+                      >
+                      <div class="tsd-comment tsd-typography">
+                        <p>Parte real del complejo.</p>
+                      </div>
+                      <div class="tsd-comment tsd-typography"></div>
+                    </li>
+                    <li>
+                      <span
+                        ><span class="tsd-kind-parameter">imaginario</span>:
+                        <span class="tsd-signature-type">number</span></span
+                      >
+                      <div class="tsd-comment tsd-typography">
+                        <p>Parte imaginaria del complejo.</p>
+                      </div>
+                      <div class="tsd-comment tsd-typography"></div>
+                    </li>
+                  </ul>
+                </div>
+                <h4 class="tsd-returns-title">
+                  Returns
+                  <a
+                    href="Complex.html"
+                    class="tsd-signature-type tsd-kind-class"
+                    >Complex</a
+                  >
+                </h4>
+                <div class="tsd-comment tsd-typography">
+                  <h4>Breif</h4>
+                  <p>Constructor de la clase Complex.</p>
+                </div>
+                <aside class="tsd-sources">
+                  <ul>
+                    <li>
+                      Defined in
+                      <a
+                        href="https://github.com/ManuelDavidGomezAlonso/PModDSI/blob/1b39d67/src/modificacion.ts#L48"
+                        >modificacion.ts:48</a
+                      >
+                    </li>
+                  </ul>
+                </aside>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section class="tsd-panel-group tsd-member-group">
+          <h2>Properties</h2>
+          <section class="tsd-panel tsd-member tsd-is-private">
+            <a id="imaginario" class="tsd-anchor"></a>
+            <h3 class="tsd-anchor-link">
+              <code class="tsd-tag ts-flagPrivate">Private</code>
+              <span>imaginario</span
+              ><a
+                href="#imaginario"
+                aria-label="Permalink"
+                class="tsd-anchor-icon"
+                ><svg viewBox="0 0 24 24">
+                  <use href="../assets/icons.svg#icon-anchor"></use></svg
+              ></a>
+            </h3>
+            <div class="tsd-signature">
+              <span class="tsd-kind-property">imaginario</span
+              ><span class="tsd-signature-symbol">:</span>
+              <span class="tsd-signature-type">number</span>
+            </div>
+            <div class="tsd-comment tsd-typography">
+              <p>Parte imaginaria del complejo.</p>
+            </div>
+            <div class="tsd-comment tsd-typography"></div>
+            <aside class="tsd-sources">
+              <ul>
+                <li>
+                  Defined in
+                  <a
+                    href="https://github.com/ManuelDavidGomezAlonso/PModDSI/blob/1b39d67/src/modificacion.ts#L48"
+                    >modificacion.ts:48</a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </section>
+          <section class="tsd-panel tsd-member tsd-is-private">
+            <a id="real" class="tsd-anchor"></a>
+            <h3 class="tsd-anchor-link">
+              <code class="tsd-tag ts-flagPrivate">Private</code>
+              <span>real</span
+              ><a href="#real" aria-label="Permalink" class="tsd-anchor-icon"
+                ><svg viewBox="0 0 24 24">
+                  <use href="../assets/icons.svg#icon-anchor"></use></svg
+              ></a>
+            </h3>
+            <div class="tsd-signature">
+              <span class="tsd-kind-property">real</span
+              ><span class="tsd-signature-symbol">:</span>
+              <span class="tsd-signature-type">number</span>
+            </div>
+            <div class="tsd-comment tsd-typography">
+              <p>Parte real del complejo.</p>
+            </div>
+            <div class="tsd-comment tsd-typography"></div>
+            <aside class="tsd-sources">
+              <ul>
+                <li>
+                  Defined in
+                  <a
+                    href="https://github.com/ManuelDavidGomezAlonso/PModDSI/blob/1b39d67/src/modificacion.ts#L48"
+                    >modificacion.ts:48</a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </section>
+        </section>
+        <section class="tsd-panel-group tsd-member-group">
+          <h2>Methods</h2>
+          <section class="tsd-panel tsd-member">
+            <a id="add" class="tsd-anchor"></a>
+            <h3 class="tsd-anchor-link">
+              <span>add</span
+              ><a href="#add" aria-label="Permalink" class="tsd-anchor-icon"
+                ><svg viewBox="0 0 24 24">
+                  <use href="../assets/icons.svg#icon-anchor"></use></svg
+              ></a>
+            </h3>
+            <ul class="tsd-signatures">
+              <li class="tsd-signature tsd-anchor-link">
+                <a id="add.add-1" class="tsd-anchor"></a
+                ><span class="tsd-kind-call-signature">add</span
+                ><span class="tsd-signature-symbol">(</span
+                ><span class="tsd-kind-parameter">complejo</span
+                ><span class="tsd-signature-symbol">)</span
+                ><span class="tsd-signature-symbol">: </span
+                ><a
+                  href="Complex.html"
+                  class="tsd-signature-type tsd-kind-class"
+                  >Complex</a
+                ><a
+                  href="#add.add-1"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg viewBox="0 0 24 24">
+                    <use href="../assets/icons.svg#icon-anchor"></use></svg
+                ></a>
+              </li>
+              <li class="tsd-description">
+                <div class="tsd-parameters">
+                  <h4 class="tsd-parameters-title">Parameters</h4>
+                  <ul class="tsd-parameter-list">
+                    <li>
+                      <span
+                        ><span class="tsd-kind-parameter">complejo</span>:
+                        <a
+                          href="Complex.html"
+                          class="tsd-signature-type tsd-kind-class"
+                          >Complex</a
+                        ></span
+                      >
+                      <div class="tsd-comment tsd-typography">
+                        <p>Complejo a sumar con el actual.</p>
+                      </div>
+                      <div class="tsd-comment tsd-typography"></div>
+                    </li>
+                  </ul>
+                </div>
+                <h4 class="tsd-returns-title">
+                  Returns
+                  <a
+                    href="Complex.html"
+                    class="tsd-signature-type tsd-kind-class"
+                    >Complex</a
+                  >
+                </h4>
+                <p>Resultado numérico de la suma.</p>
+                <div class="tsd-comment tsd-typography">
+                  <h4>Brief</h4>
+                  <p>Suma de números complejos.</p>
+                </div>
+                <aside class="tsd-sources">
+                  <p>Implementation of Arithmeticable.add</p>
+                  <ul>
+                    <li>
+                      Defined in
+                      <a
+                        href="https://github.com/ManuelDavidGomezAlonso/PModDSI/blob/1b39d67/src/modificacion.ts#L56"
+                        >modificacion.ts:56</a
+                      >
+                    </li>
+                  </ul>
+                </aside>
+              </li>
+            </ul>
+          </section>
+          <section class="tsd-panel tsd-member">
+            <a id="divide" class="tsd-anchor"></a>
+            <h3 class="tsd-anchor-link">
+              <span>divide</span
+              ><a href="#divide" aria-label="Permalink" class="tsd-anchor-icon"
+                ><svg viewBox="0 0 24 24">
+                  <use href="../assets/icons.svg#icon-anchor"></use></svg
+              ></a>
+            </h3>
+            <ul class="tsd-signatures">
+              <li class="tsd-signature tsd-anchor-link">
+                <a id="divide.divide-1" class="tsd-anchor"></a
+                ><span class="tsd-kind-call-signature">divide</span
+                ><span class="tsd-signature-symbol">(</span
+                ><span class="tsd-kind-parameter">complejo</span
+                ><span class="tsd-signature-symbol">)</span
+                ><span class="tsd-signature-symbol">: </span
+                ><a
+                  href="Complex.html"
+                  class="tsd-signature-type tsd-kind-class"
+                  >Complex</a
+                ><a
+                  href="#divide.divide-1"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg viewBox="0 0 24 24">
+                    <use href="../assets/icons.svg#icon-anchor"></use></svg
+                ></a>
+              </li>
+              <li class="tsd-description">
+                <div class="tsd-parameters">
+                  <h4 class="tsd-parameters-title">Parameters</h4>
+                  <ul class="tsd-parameter-list">
+                    <li>
+                      <span
+                        ><span class="tsd-kind-parameter">complejo</span>:
+                        <a
+                          href="Complex.html"
+                          class="tsd-signature-type tsd-kind-class"
+                          >Complex</a
+                        ></span
+                      >
+                      <div class="tsd-comment tsd-typography">
+                        <p>Complejo en el dividendo.</p>
+                      </div>
+                      <div class="tsd-comment tsd-typography"></div>
+                    </li>
+                  </ul>
+                </div>
+                <h4 class="tsd-returns-title">
+                  Returns
+                  <a
+                    href="Complex.html"
+                    class="tsd-signature-type tsd-kind-class"
+                    >Complex</a
+                  >
+                </h4>
+                <p>Resultado numérico de la División.</p>
+                <div class="tsd-comment tsd-typography">
+                  <h4>Brief</h4>
+                  <p>División de números complejos.</p>
+                </div>
+                <aside class="tsd-sources">
+                  <p>Implementation of Arithmeticable.divide</p>
+                  <ul>
+                    <li>
+                      Defined in
+                      <a
+                        href="https://github.com/ManuelDavidGomezAlonso/PModDSI/blob/1b39d67/src/modificacion.ts#L83"
+                        >modificacion.ts:83</a
+                      >
+                    </li>
+                  </ul>
+                </aside>
+              </li>
+            </ul>
+          </section>
+          <section class="tsd-panel tsd-member">
+            <a id="getImagin" class="tsd-anchor"></a>
+            <h3 class="tsd-anchor-link">
+              <span>get<wbr />Imagin</span
+              ><a
+                href="#getImagin"
+                aria-label="Permalink"
+                class="tsd-anchor-icon"
+                ><svg viewBox="0 0 24 24">
+                  <use href="../assets/icons.svg#icon-anchor"></use></svg
+              ></a>
+            </h3>
+            <ul class="tsd-signatures">
+              <li class="tsd-signature tsd-anchor-link">
+                <a id="getImagin.getImagin-1" class="tsd-anchor"></a
+                ><span class="tsd-kind-call-signature">get<wbr />Imagin</span
+                ><span class="tsd-signature-symbol">(</span
+                ><span class="tsd-signature-symbol">)</span
+                ><span class="tsd-signature-symbol">: </span
+                ><span class="tsd-signature-type">number</span
+                ><a
+                  href="#getImagin.getImagin-1"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg viewBox="0 0 24 24">
+                    <use href="../assets/icons.svg#icon-anchor"></use></svg
+                ></a>
+              </li>
+              <li class="tsd-description">
+                <h4 class="tsd-returns-title">
+                  Returns <span class="tsd-signature-type">number</span>
+                </h4>
+                <p>Parte imaginaria del número complejo.</p>
+                <div class="tsd-comment tsd-typography">
+                  <h4>Brief</h4>
+                  <p>Obtiene la parte imaginaria del número complejo.</p>
+                </div>
+                <aside class="tsd-sources">
+                  <ul>
+                    <li>
+                      Defined in
+                      <a
+                        href="https://github.com/ManuelDavidGomezAlonso/PModDSI/blob/1b39d67/src/modificacion.ts#L91"
+                        >modificacion.ts:91</a
+                      >
+                    </li>
+                  </ul>
+                </aside>
+              </li>
+            </ul>
+          </section>
+          <section class="tsd-panel tsd-member">
+            <a id="getReal" class="tsd-anchor"></a>
+            <h3 class="tsd-anchor-link">
+              <span>get<wbr />Real</span
+              ><a href="#getReal" aria-label="Permalink" class="tsd-anchor-icon"
+                ><svg viewBox="0 0 24 24">
+                  <use href="../assets/icons.svg#icon-anchor"></use></svg
+              ></a>
+            </h3>
+            <ul class="tsd-signatures">
+              <li class="tsd-signature tsd-anchor-link">
+                <a id="getReal.getReal-1" class="tsd-anchor"></a
+                ><span class="tsd-kind-call-signature">get<wbr />Real</span
+                ><span class="tsd-signature-symbol">(</span
+                ><span class="tsd-signature-symbol">)</span
+                ><span class="tsd-signature-symbol">: </span
+                ><span class="tsd-signature-type">number</span
+                ><a
+                  href="#getReal.getReal-1"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg viewBox="0 0 24 24">
+                    <use href="../assets/icons.svg#icon-anchor"></use></svg
+                ></a>
+              </li>
+              <li class="tsd-description">
+                <h4 class="tsd-returns-title">
+                  Returns <span class="tsd-signature-type">number</span>
+                </h4>
+                <p>Parte real del número complejo.</p>
+                <div class="tsd-comment tsd-typography">
+                  <h4>Brief</h4>
+                  <p>Obtiene la parte real del número complejo.</p>
+                </div>
+                <aside class="tsd-sources">
+                  <ul>
+                    <li>
+                      Defined in
+                      <a
+                        href="https://github.com/ManuelDavidGomezAlonso/PModDSI/blob/1b39d67/src/modificacion.ts#L98"
+                        >modificacion.ts:98</a
+                      >
+                    </li>
+                  </ul>
+                </aside>
+              </li>
+            </ul>
+          </section>
+          <section class="tsd-panel tsd-member">
+            <a id="multiply" class="tsd-anchor"></a>
+            <h3 class="tsd-anchor-link">
+              <span>multiply</span
+              ><a
+                href="#multiply"
+                aria-label="Permalink"
+                class="tsd-anchor-icon"
+                ><svg viewBox="0 0 24 24">
+                  <use href="../assets/icons.svg#icon-anchor"></use></svg
+              ></a>
+            </h3>
+            <ul class="tsd-signatures">
+              <li class="tsd-signature tsd-anchor-link">
+                <a id="multiply.multiply-1" class="tsd-anchor"></a
+                ><span class="tsd-kind-call-signature">multiply</span
+                ><span class="tsd-signature-symbol">(</span
+                ><span class="tsd-kind-parameter">complejo</span
+                ><span class="tsd-signature-symbol">)</span
+                ><span class="tsd-signature-symbol">: </span
+                ><a
+                  href="Complex.html"
+                  class="tsd-signature-type tsd-kind-class"
+                  >Complex</a
+                ><a
+                  href="#multiply.multiply-1"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg viewBox="0 0 24 24">
+                    <use href="../assets/icons.svg#icon-anchor"></use></svg
+                ></a>
+              </li>
+              <li class="tsd-description">
+                <div class="tsd-parameters">
+                  <h4 class="tsd-parameters-title">Parameters</h4>
+                  <ul class="tsd-parameter-list">
+                    <li>
+                      <span
+                        ><span class="tsd-kind-parameter">complejo</span>:
+                        <a
+                          href="Complex.html"
+                          class="tsd-signature-type tsd-kind-class"
+                          >Complex</a
+                        ></span
+                      >
+                      <div class="tsd-comment tsd-typography">
+                        <p>Complejo en el multiplicando de la operación.</p>
+                      </div>
+                      <div class="tsd-comment tsd-typography"></div>
+                    </li>
+                  </ul>
+                </div>
+                <h4 class="tsd-returns-title">
+                  Returns
+                  <a
+                    href="Complex.html"
+                    class="tsd-signature-type tsd-kind-class"
+                    >Complex</a
+                  >
+                </h4>
+                <p>Resultado numérico de la multiplicación.</p>
+                <div class="tsd-comment tsd-typography">
+                  <h4>Brief</h4>
+                  <p>Multiplicación de números complejos.</p>
+                </div>
+                <aside class="tsd-sources">
+                  <p>Implementation of Arithmeticable.multiply</p>
+                  <ul>
+                    <li>
+                      Defined in
+                      <a
+                        href="https://github.com/ManuelDavidGomezAlonso/PModDSI/blob/1b39d67/src/modificacion.ts#L74"
+                        >modificacion.ts:74</a
+                      >
+                    </li>
+                  </ul>
+                </aside>
+              </li>
+            </ul>
+          </section>
+          <section class="tsd-panel tsd-member">
+            <a id="substract" class="tsd-anchor"></a>
+            <h3 class="tsd-anchor-link">
+              <span>substract</span
+              ><a
+                href="#substract"
+                aria-label="Permalink"
+                class="tsd-anchor-icon"
+                ><svg viewBox="0 0 24 24">
+                  <use href="../assets/icons.svg#icon-anchor"></use></svg
+              ></a>
+            </h3>
+            <ul class="tsd-signatures">
+              <li class="tsd-signature tsd-anchor-link">
+                <a id="substract.substract-1" class="tsd-anchor"></a
+                ><span class="tsd-kind-call-signature">substract</span
+                ><span class="tsd-signature-symbol">(</span
+                ><span class="tsd-kind-parameter">complejo</span
+                ><span class="tsd-signature-symbol">)</span
+                ><span class="tsd-signature-symbol">: </span
+                ><a
+                  href="Complex.html"
+                  class="tsd-signature-type tsd-kind-class"
+                  >Complex</a
+                ><a
+                  href="#substract.substract-1"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg viewBox="0 0 24 24">
+                    <use href="../assets/icons.svg#icon-anchor"></use></svg
+                ></a>
+              </li>
+              <li class="tsd-description">
+                <div class="tsd-parameters">
+                  <h4 class="tsd-parameters-title">Parameters</h4>
+                  <ul class="tsd-parameter-list">
+                    <li>
+                      <span
+                        ><span class="tsd-kind-parameter">complejo</span>:
+                        <a
+                          href="Complex.html"
+                          class="tsd-signature-type tsd-kind-class"
+                          >Complex</a
+                        ></span
+                      >
+                      <div class="tsd-comment tsd-typography">
+                        <p>Complejo a restar con el actual.</p>
+                      </div>
+                      <div class="tsd-comment tsd-typography"></div>
+                    </li>
+                  </ul>
+                </div>
+                <h4 class="tsd-returns-title">
+                  Returns
+                  <a
+                    href="Complex.html"
+                    class="tsd-signature-type tsd-kind-class"
+                    >Complex</a
+                  >
+                </h4>
+                <p>Resultado numérico de la resta.</p>
+                <div class="tsd-comment tsd-typography">
+                  <h4>Brief</h4>
+                  <p>Resta de números complejos.</p>
+                </div>
+                <aside class="tsd-sources">
+                  <p>Implementation of Arithmeticable.substract</p>
+                  <ul>
+                    <li>
+                      Defined in
+                      <a
+                        href="https://github.com/ManuelDavidGomezAlonso/PModDSI/blob/1b39d67/src/modificacion.ts#L65"
+                        >modificacion.ts:65</a
+                      >
+                    </li>
+                  </ul>
+                </aside>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </div>
+      <div class="col-sidebar">
+        <div class="page-menu">
+          <div class="tsd-navigation settings">
+            <details class="tsd-index-accordion">
+              <summary class="tsd-accordion-summary">
+                <h3>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <use href="../assets/icons.svg#icon-chevronDown"></use></svg
+                  >Settings
+                </h3>
+              </summary>
+              <div class="tsd-accordion-details">
+                <div class="tsd-filter-visibility">
+                  <h4 class="uppercase">Member Visibility</h4>
+                  <form>
+                    <ul id="tsd-filter-options">
+                      <li class="tsd-filter-item">
+                        <label class="tsd-filter-input"
+                          ><input
+                            type="checkbox"
+                            id="tsd-filter-protected"
+                            name="protected"
+                          /><svg
+                            width="32"
+                            height="32"
+                            viewBox="0 0 32 32"
+                            aria-hidden="true"
+                          >
+                            <rect
+                              class="tsd-checkbox-background"
+                              width="30"
+                              height="30"
+                              x="1"
+                              y="1"
+                              rx="6"
+                              fill="none"
+                            ></rect>
+                            <path
+                              class="tsd-checkbox-checkmark"
+                              d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25"
+                              stroke="none"
+                              stroke-width="3.5"
+                              stroke-linejoin="round"
+                              fill="none"
+                            ></path></svg
+                          ><span>Protected</span></label
+                        >
+                      </li>
+                      <li class="tsd-filter-item">
+                        <label class="tsd-filter-input"
+                          ><input
+                            type="checkbox"
+                            id="tsd-filter-private"
+                            name="private"
+                          /><svg
+                            width="32"
+                            height="32"
+                            viewBox="0 0 32 32"
+                            aria-hidden="true"
+                          >
+                            <rect
+                              class="tsd-checkbox-background"
+                              width="30"
+                              height="30"
+                              x="1"
+                              y="1"
+                              rx="6"
+                              fill="none"
+                            ></rect>
+                            <path
+                              class="tsd-checkbox-checkmark"
+                              d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25"
+                              stroke="none"
+                              stroke-width="3.5"
+                              stroke-linejoin="round"
+                              fill="none"
+                            ></path></svg
+                          ><span>Private</span></label
+                        >
+                      </li>
+                      <li class="tsd-filter-item">
+                        <label class="tsd-filter-input"
+                          ><input
+                            type="checkbox"
+                            id="tsd-filter-inherited"
+                            name="inherited"
+                            checked
+                          /><svg
+                            width="32"
+                            height="32"
+                            viewBox="0 0 32 32"
+                            aria-hidden="true"
+                          >
+                            <rect
+                              class="tsd-checkbox-background"
+                              width="30"
+                              height="30"
+                              x="1"
+                              y="1"
+                              rx="6"
+                              fill="none"
+                            ></rect>
+                            <path
+                              class="tsd-checkbox-checkmark"
+                              d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25"
+                              stroke="none"
+                              stroke-width="3.5"
+                              stroke-linejoin="round"
+                              fill="none"
+                            ></path></svg
+                          ><span>Inherited</span></label
+                        >
+                      </li>
+                      <li class="tsd-filter-item">
+                        <label class="tsd-filter-input"
+                          ><input
+                            type="checkbox"
+                            id="tsd-filter-external"
+                            name="external"
+                          /><svg
+                            width="32"
+                            height="32"
+                            viewBox="0 0 32 32"
+                            aria-hidden="true"
+                          >
+                            <rect
+                              class="tsd-checkbox-background"
+                              width="30"
+                              height="30"
+                              x="1"
+                              y="1"
+                              rx="6"
+                              fill="none"
+                            ></rect>
+                            <path
+                              class="tsd-checkbox-checkmark"
+                              d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25"
+                              stroke="none"
+                              stroke-width="3.5"
+                              stroke-linejoin="round"
+                              fill="none"
+                            ></path></svg
+                          ><span>External</span></label
+                        >
+                      </li>
+                    </ul>
+                  </form>
+                </div>
+                <div class="tsd-theme-toggle">
+                  <h4 class="uppercase">Theme</h4>
+                  <select id="tsd-theme">
+                    <option value="os">OS</option>
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                  </select>
+                </div>
+              </div>
+            </details>
+          </div>
+          <details open class="tsd-index-accordion tsd-page-navigation">
+            <summary class="tsd-accordion-summary">
+              <h3>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <use href="../assets/icons.svg#icon-chevronDown"></use></svg
+                >On This Page
+              </h3>
+            </summary>
+            <div class="tsd-accordion-details">
+              <ul>
+                <li>
+                  <a href="#constructor" class=""
+                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                      <use href="../assets/icons.svg#icon-512"></use></svg
+                    ><span>constructor</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#imaginario" class="tsd-is-private"
+                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                      <use href="../assets/icons.svg#icon-1024"></use></svg
+                    ><span>imaginario</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#real" class="tsd-is-private"
+                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                      <use href="../assets/icons.svg#icon-1024"></use></svg
+                    ><span>real</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#add" class=""
+                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                      <use href="../assets/icons.svg#icon-2048"></use></svg
+                    ><span>add</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#divide" class=""
+                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                      <use href="../assets/icons.svg#icon-2048"></use></svg
+                    ><span>divide</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#getImagin" class=""
+                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                      <use href="../assets/icons.svg#icon-2048"></use></svg
+                    ><span>get<wbr />Imagin</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#getReal" class=""
+                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                      <use href="../assets/icons.svg#icon-2048"></use></svg
+                    ><span>get<wbr />Real</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#multiply" class=""
+                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                      <use href="../assets/icons.svg#icon-2048"></use></svg
+                    ><span>multiply</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#substract" class=""
+                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                      <use href="../assets/icons.svg#icon-2048"></use></svg
+                    ><span>substract</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </details>
+        </div>
+        <div class="site-menu">
+          <nav class="tsd-navigation">
+            <a href="../modules.html"
+              ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                <use href="../assets/icons.svg#icon-1"></use></svg
+              ><span>instanbul-coveralls</span></a
+            >
+            <ul
+              class="tsd-small-nested-navigation"
+              id="tsd-nav-container"
+              data-base=".."
+            >
+              <li>Loading...</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="tsd-generator">
+      <p>
+        Generated using
+        <a href="https://typedoc.org/" target="_blank">TypeDoc</a>
+      </p>
+    </div>
+    <div class="overlay"></div>
+  </body>
+</html>

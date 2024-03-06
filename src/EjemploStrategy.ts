@@ -1,5 +1,5 @@
-// Patron de diseño Strategy - Comportamiento 
-//  Permite escribir algoritmos de clases independientes de tal manera que 
+// Patron de diseño Strategy - Comportamiento
+//  Permite escribir algoritmos de clases independientes de tal manera que
 //  los diferentes objetos de las clases sean intercambiables.
 //
 //
@@ -12,8 +12,10 @@ class Solver {
    * The context has a reference to a Strategy object. It should only works
    * with strategies through the Strategy interface
    */
-  constructor(private data: number[], private strategy: Strategy) {
-  }
+  constructor(
+    private data: number[],
+    private strategy: Strategy,
+  ) {}
 
   /**
    * A setter is required in order to change the strategy in execution time

@@ -5,8 +5,7 @@
 //
 
 class SystemA {
-  constructor(private csvData: string = '') {
-  }
+  constructor(private csvData: string = "") {}
   getData(): string {
     return this.csvData;
   }
@@ -16,34 +15,40 @@ type JSONData = {
   name: string;
   surname: string;
   username: string;
-}
+};
 
 class SystemB {
-  constructor(private jsonData: JSONData = {
-    name: '', surname: '', username: ''}) {
-  }
+  constructor(
+    private jsonData: JSONData = {
+      name: "",
+      surname: "",
+      username: "",
+    },
+  ) {}
   getSpecificData(): JSONData {
     return this.jsonData;
   }
 }
 
-// 
+//
 class Adapter extends SystemA {
   constructor(private service: SystemB) {
     super();
   }
   getData(): string {
-    return `${this.service.getSpecificData().name},` +
-           `${this.service.getSpecificData().surname},` +
-           `${this.service.getSpecificData().username}`;
+    return (
+      `${this.service.getSpecificData().name},` +
+      `${this.service.getSpecificData().surname},` +
+      `${this.service.getSpecificData().username}`
+    );
   }
 }
 
-const systemA = new SystemA('Eduardo,Segredo,esegredo');
+const systemA = new SystemA("Eduardo,Segredo,esegredo");
 const systemB = new SystemB({
-  name: 'Eduardo',
-  surname: 'Segredo',
-  username: 'esegredo',
+  name: "Eduardo",
+  surname: "Segredo",
+  username: "esegredo",
 });
 
 // Client code

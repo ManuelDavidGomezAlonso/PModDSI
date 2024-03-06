@@ -56,7 +56,7 @@ describe('Comprobando que se puede incluir un racional adaptado a colección de 
     const adapt = new Adapter(rational1);
     const collection = new ArithmeticableCollection<Rational | Complex>([rational1]); 
     it('Añadimos 1 elemeto Adapter', () => {
-        collection.addArithmeticable(complex2);                                // Añadimos 1
+        collection.addArithmeticable(complex2);                                
         collection.addArithmeticable(adapt);
         expect(collection.collect).to.have.lengthOf(3);
       });

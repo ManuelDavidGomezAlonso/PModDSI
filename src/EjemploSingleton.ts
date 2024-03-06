@@ -1,7 +1,7 @@
 type KnapsackItem = {
   weight: number;
   profit: number;
-}
+};
 //
 // - Marcaremos la clave del singleton a continuación.
 // - Este patrón rompe con el principio SOLID - S (Single responsability principle).
@@ -60,15 +60,16 @@ class KnapsackInstance {
 }
 
 const knapsackInstance = KnapsackInstance.getKnapsackInstance();
-knapsackInstance.addItem({weight: 10, profit: 30});
+knapsackInstance.addItem({ weight: 10, profit: 30 });
 const secondKnapsackInstance = KnapsackInstance.getKnapsackInstance();
-secondKnapsackInstance.addItem({weight: 20, profit: 20});
+secondKnapsackInstance.addItem({ weight: 20, profit: 20 });
 
 if (knapsackInstance === secondKnapsackInstance) {
-  console.log('We are the same object');
+  console.log("We are the same object");
 } else {
-  console.log('We are different objects');
+  console.log("We are different objects");
 }
 
-KnapsackInstance.getKnapsackInstance().getItems().forEach((item) =>
-  console.log(item));
+KnapsackInstance.getKnapsackInstance()
+  .getItems()
+  .forEach((item) => console.log(item));
