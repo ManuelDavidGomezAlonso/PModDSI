@@ -181,8 +181,7 @@ const complex1 = new Complex(1,2);
 const complex2 = new Complex(-2,3);
 const adapting = new Adapter(rational1);
 
-const collect = new ArithmeticableCollection<Rational | Complex>([rational1,complex2]);
-console.log(complex1.add(adapting));
+const collect = new ArithmeticableCollection<Rational | Complex>([rational1,complex2,adapting]);
 collect.addArithmeticable(rational1);
 collect.addArithmeticable(rational2);
 collect.addArithmeticable(complex1)
