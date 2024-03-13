@@ -3,5 +3,5 @@
     "ts"
   ],
   "spec": "tests/**/*.spec.ts",
-  "require": "ts-node/register"
+  "require": "ts-node/esm"
 }
